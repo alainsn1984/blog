@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-48mt6h69r_@+o%qj+&@7zu05dh00c@0v9!41b$1$d&$9%r_ck=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     # 3rd Party
     'taggit',
-    
+
     # Local Apps
     'blog.apps.BlogConfig',
 ]

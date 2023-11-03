@@ -1,5 +1,5 @@
 
-{% comment %} {% if is_paginated %}
+{% if is_paginated %}
 	
 	<div class="pagination">
 		<span class="step-links">
@@ -15,9 +15,9 @@
 		</span>
 	</div>
 
-{% endif %} {% endcomment %}
+{% endif %}
 
-{% if is_paginated %}
+{% comment %} {% if is_paginated %}
   <nav aria-label="Page navigation conatiner"></nav>
   <ul class="pagination justify-content-center">
     {% if page_obj.has_previous %}
@@ -29,4 +29,4 @@
     {% endif %}
   </ul>
   </nav></div>
-{% endif %}
+{% endif %} {% endcomment %}
