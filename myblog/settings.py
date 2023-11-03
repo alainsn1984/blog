@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
+SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,12 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     # 3rd Party
     'taggit',
-
     # Local Apps
     'blog.apps.BlogConfig',
+    # SITEMAP
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
